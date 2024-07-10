@@ -1,0 +1,89 @@
+body {
+    background-color:  hsl(235, 16%, 14%);
+    font-family: "Red Hat Text", sans-serif;
+    text-transform: uppercase;
+}
+
+.content {
+    &-title {
+        padding: 70px 0;
+        color: #fff;
+        h1 {
+            font-size: 22px;
+            letter-spacing: 5px;
+        }
+    }
+
+    &-timer {
+        padding: 50px 0;
+        @media only screen and (max-width: 650px) {
+            display: flex;
+            flex-direction: column;
+        }
+        &_item {
+            padding: 0px 10px;
+            &-top {
+                background-color:  #343650;
+                color: #fb6087;
+                font-weight: bold;
+                border-radius: 10px;
+                width: 140px;
+                p {
+                    padding: 10px;
+                    font-size: 4rem;
+                }
+                @media only screen and (max-width: 650px) {
+                    font-size: 50px;
+                    width: 250px;
+                }
+            }
+
+            &-bottom {
+                color: #fff;
+            }
+        }
+    }
+
+    &-socials {
+        width: 100%;
+        padding: 40px 0;
+        position: absolute;
+        top: 1;
+        left: 0;
+        bottom: 0;
+        @media only screen and (max-width: 650px) {
+            position: relative;
+        }
+        &-item {
+            padding: 0px 10px;
+        }
+    }
+
+    .stars {
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        img {
+            width: 100%;
+        }
+    }
+
+    .hills {
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 0;
+        top: 1;
+        bottom: 0;
+        object-fit: cover;
+        @media only screen and (max-width: 650px) {
+            position: relative;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
